@@ -21,6 +21,10 @@
         border-radius: 10px;
       }
     </style>
+    <script>
+      // Prevent crash if process.env is accessed before the platform injects it
+      window.process = window.process || { env: {} };
+    </script>
     <script type="importmap">
     {
       "imports": {
@@ -35,5 +39,7 @@
   </head>
   <body class="antialiased">
     <div id="root"></div>
+    <!-- Entry point for the application -->
+    <script type="module" src="./index.tsx"></script>
   </body>
 </html>

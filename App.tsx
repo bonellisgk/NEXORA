@@ -344,14 +344,9 @@ const App: React.FC = () => {
 
   return (
     <Layout activeTab={activeTab} setActiveTab={setActiveTab}>
-      <div className="flex justify-between items-center mb-8 px-2">
-        <div className="flex flex-col">
-          <span className="text-2xl font-black text-gray-900 tracking-tight leading-none">Hello,</span>
-          <span className="text-2xl font-black text-[#2490D1] tracking-tight leading-tight">{displayName}!</span>
-        </div>
-        <div className="w-10 h-10 bg-gray-100 rounded-full border-2 border-white shadow-sm overflow-hidden">
-          <img src={`https://api.dicebear.com/7.x/avataaars/svg?seed=${user.id}`} alt="avatar" />
-        </div>
+      <div className="flex flex-col mb-8 px-2">
+        <span className="text-2xl font-black text-gray-900 tracking-tight leading-none">Hello,</span>
+        <span className="text-2xl font-black text-[#2490D1] tracking-tight leading-tight">{displayName}!</span>
       </div>
 
       {error && (
