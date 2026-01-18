@@ -7,6 +7,20 @@ export interface HealthMetrics {
   timestamp: string;
 }
 
+export interface UserProfile {
+  age: number;
+  height: number;
+  weight: number;
+  goal: string;
+  goalWeight: number;
+}
+
+export interface DailyGoals {
+  water: { current: number; total: number };
+  calories: { current: number; total: number };
+  steps: { current: number; total: number };
+}
+
 export interface FoodLogEntry {
   id: string;
   query: string;

@@ -11,7 +11,7 @@ interface LogoProps {
 const Logo: React.FC<LogoProps> = ({ 
   className = "", 
   showText = true, 
-  textColor = "text-[#1D89CE]",
+  textColor = "text-[#2490D1]",
   size = 48
 }) => {
   return (
@@ -19,38 +19,39 @@ const Logo: React.FC<LogoProps> = ({
       <svg 
         width={size} 
         height={size} 
-        viewBox="0 0 100 100" 
+        viewBox="0 0 512 512" 
         fill="none" 
         xmlns="http://www.w3.org/2000/svg"
         className="shrink-0"
       >
-        {/* Blue Cross Background Shape */}
+        {/* Main Blue Cross Shape */}
         <path 
-          d="M38 10C35 10 33 12 33 15V33H15C12 33 10 35 10 38V62C10 65 12 67 15 67H33V85C33 88 35 90 38 90H62C65 90 67 88 67 85V67H85C88 67 90 65 90 62V38C90 35 88 33 85 33H67V15C67 12 65 10 62 10H38Z" 
-          stroke="#1D89CE" 
-          strokeWidth="8" 
+          d="M325.2 46.2C318.5 44 311.5 42.8 304.4 42.8H207.6C181.3 42.8 160 64.1 160 90.4V160H90.4C64.1 160 42.8 181.3 42.8 207.6V304.4C42.8 330.7 64.1 352 90.4 352H160V421.6C160 447.9 181.3 469.2 207.6 469.2H304.4C330.7 469.2 352 447.9 352 421.6V352H421.6C447.9 352 469.2 330.7 469.2 304.4V207.6C469.2 181.3 447.9 160 421.6 160H352V90.4C352 72.8 342.5 57.5 325.2 46.2Z" 
+          stroke="#2490D1" 
+          strokeWidth="38" 
           strokeLinecap="round" 
           strokeLinejoin="round"
         />
         
-        {/* Center Teal Leaves */}
+        {/* Upper Teal Leaf */}
         <path 
-          d="M50 35C42 35 34 42 34 52C34 62 45 66 50 66C58 66 66 59 66 49C66 39 55 35 50 35Z" 
-          fill="#57C9B6" 
-          fillOpacity="0.85"
-        />
-        <path 
-          d="M50 65C58 65 66 58 66 48C66 38 55 34 50 34C42 34 34 41 34 51C34 61 45 65 50 65Z" 
-          fill="#57C9B6"
+          d="M358.3 162.1C325.8 153.4 285.4 168.2 248.7 196.4C212 224.6 179 266.2 175.2 301.8C183.9 334.3 214.3 358.5 250.9 358.5C310.5 358.5 358.9 310.1 358.9 250.5C358.9 217.1 358.3 162.1 358.3 162.1Z" 
+          fill="#5BC6B3"
         />
         
-        {/* Leaf Stem Detail */}
+        {/* Lower Blue-Teal Leaf */}
         <path 
-          d="M36 53C36 53 42 45 50 45C58 45 64 53 64 53" 
+          d="M182.2 344.6C214.7 353.3 255.1 338.5 291.8 310.3C328.5 282.1 361.5 240.5 365.3 204.9C356.6 172.4 326.2 148.2 289.6 148.2C230 148.2 181.6 196.6 181.6 256.2C181.6 289.6 182.2 344.6 182.2 344.6Z" 
+          fill="#2490D1"
+        />
+        
+        {/* Leaf Intersection Curve (White Line) */}
+        <path 
+          d="M235 245C255 225 290 220 320 235" 
           stroke="white" 
-          strokeWidth="2" 
+          strokeWidth="8" 
           strokeLinecap="round" 
-          opacity="0.3"
+          opacity="0.2"
         />
       </svg>
       

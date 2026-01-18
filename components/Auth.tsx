@@ -74,7 +74,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
       <div className="w-full max-w-sm bg-white rounded-[2rem] shadow-2xl p-8 border border-gray-100 transition-all duration-300">
         <div className="flex flex-col items-center text-center mb-8">
           <Logo size={64} className="mb-2" showText={false} />
-          <h1 className="text-2xl font-black text-[#1D89CE] tracking-tight">Health Companion</h1>
+          <h1 className="text-2xl font-black text-[#2D5362] tracking-tight">Health Companion</h1>
           <p className="text-gray-500 text-sm mt-1 font-medium">
             {isLogin ? 'Welcome back! Please login.' : 'Join us to start your health journey.'}
           </p>
@@ -96,7 +96,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
                 required={!isLogin}
                 value={userName}
                 onChange={(e) => setUserName(e.target.value)}
-                className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#57C9B6] focus:bg-white transition-all"
+                className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                 placeholder="John Doe"
               />
             </div>
@@ -109,7 +109,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
               required
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#57C9B6] focus:bg-white transition-all"
+              className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
               placeholder="e.g. john@health.com"
             />
           </div>
@@ -121,7 +121,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
               required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
-              className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#57C9B6] focus:bg-white transition-all"
+              className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
               placeholder="••••••••"
             />
           </div>
@@ -134,7 +134,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
                 required={!isLogin}
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-[#57C9B6] focus:bg-white transition-all"
+                className="w-full bg-gray-50 border border-gray-200 rounded-2xl px-5 py-4 text-gray-900 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:bg-white transition-all"
                 placeholder="••••••••"
               />
             </div>
@@ -143,7 +143,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
           <button
             type="submit"
             disabled={loading}
-            className="w-full bg-[#1D89CE] text-white font-bold py-4 rounded-2xl shadow-xl hover:bg-[#156ea6] active:scale-[0.98] transition-all flex justify-center items-center disabled:opacity-50 mt-4"
+            className="w-full bg-[#2D5362] text-white font-bold py-4 rounded-2xl shadow-xl hover:bg-black active:scale-[0.98] transition-all flex justify-center items-center disabled:opacity-50 mt-4"
           >
             {loading ? (
               <svg className="animate-spin h-5 w-5 text-white" viewBox="0 0 24 24">
@@ -160,7 +160,7 @@ const Auth: React.FC<AuthProps> = ({ onAuthSuccess }) => {
           </p>
           <button
             onClick={toggleMode}
-            className="text-sm text-[#57C9B6] font-bold hover:text-[#45a494] transition-colors bg-[#57C9B6]/10 px-6 py-2 rounded-full"
+            className="text-sm text-emerald-600 font-bold hover:text-emerald-700 transition-colors bg-emerald-50 px-6 py-2 rounded-full"
           >
             {isLogin ? "Join now" : "Login instead"}
           </button>

@@ -14,11 +14,11 @@ const Layout: React.FC<LayoutProps> = ({ activeTab, setActiveTab, children }) =>
     <div className="flex flex-col min-h-screen max-w-md mx-auto bg-white shadow-xl">
       {/* Header */}
       <header className="bg-white p-6 rounded-b-3xl shadow-sm border-b border-gray-50 sticky top-0 z-10 flex flex-col gap-1">
-        <Logo size={40} textColor="text-[#1D89CE]" />
+        <Logo size={40} textColor="text-[#2490D1]" />
         <p className="text-gray-400 text-[10px] uppercase font-bold tracking-widest ml-14">Personal Health Companion</p>
       </header>
 
-      {/* Main Content */}
+      {/* Main Content Area */}
       <main className="flex-1 p-4 pb-24 overflow-y-auto">
         {children}
       </main>
@@ -51,7 +51,7 @@ const Layout: React.FC<LayoutProps> = ({ activeTab, setActiveTab, children }) =>
 const NavButton: React.FC<{ active: boolean; onClick: () => void; icon: React.ReactNode; label: string }> = ({ active, onClick, icon, label }) => (
   <button 
     onClick={onClick}
-    className={`flex flex-col items-center transition-all duration-200 ${active ? 'text-[#1D89CE] scale-110' : 'text-gray-400'}`}
+    className={`flex flex-col items-center transition-all duration-200 ${active ? 'text-[#2490D1] scale-110' : 'text-gray-400'}`}
   >
     {icon}
     <span className="text-[10px] mt-1 font-bold uppercase tracking-wider">{label}</span>

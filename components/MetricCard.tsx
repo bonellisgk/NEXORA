@@ -23,7 +23,7 @@ const MetricCard: React.FC<MetricCardProps> = ({ title, value, unit, status, ico
   return (
     <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm transition-transform active:scale-[0.98]">
       <div className="flex justify-between items-start mb-3">
-        <div className="p-2 bg-[#4CBAB9]/10 rounded-lg text-[#2D5362]">
+        <div className="p-2 bg-[#2490D1]/10 rounded-lg text-[#2490D1]">
           {icon}
         </div>
         {status && (
