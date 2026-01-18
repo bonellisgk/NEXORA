@@ -1,0 +1,5 @@
+{
+  "name": "Health Companion",
+  "description": "A supportive mobile health companion that analyzes blood pressure, sugar levels, and diet to provide personalized wellness coaching and dietary guidance.",
+  "requestFramePermissions": []
+}
