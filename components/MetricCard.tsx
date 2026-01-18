@@ -23,7 +23,7 @@ const MetricCard: React.FC<MetricCardProps> = ({ title, value, unit, status, ico
   return (
     <div className="bg-white rounded-2xl p-5 border border-gray-100 shadow-sm transition-transform active:scale-[0.98]">
       <div className="flex justify-between items-start mb-3">
-        <div className="p-2 bg-emerald-50 rounded-lg text-emerald-600">
+        <div className="p-2 bg-[#4CBAB9]/10 rounded-lg text-[#2D5362]">
           {icon}
         </div>
         {status && (
@@ -33,13 +33,13 @@ const MetricCard: React.FC<MetricCardProps> = ({ title, value, unit, status, ico
         )}
       </div>
       <div>
-        <h3 className="text-gray-500 text-xs font-semibold uppercase tracking-wider">{title}</h3>
+        <h3 className="text-gray-500 text-[10px] font-bold uppercase tracking-widest">{title}</h3>
         <div className="flex items-baseline gap-1 mt-1">
-          <span className="text-2xl font-bold text-gray-800">{value}</span>
-          <span className="text-gray-400 text-sm">{unit}</span>
+          <span className="text-2xl font-bold text-[#2D5362]">{value}</span>
+          <span className="text-gray-400 text-sm font-medium">{unit}</span>
         </div>
         {status && (
-          <p className="text-xs text-gray-500 mt-2 leading-relaxed italic">
+          <p className="text-[10px] text-gray-500 mt-2 leading-relaxed italic font-medium">
             {status.description}
           </p>
         )}

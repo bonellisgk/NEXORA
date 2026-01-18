@@ -25,7 +25,7 @@ export interface FoodAnalysis {
   pros: string[];
   cons: string[];
   verdict: string;
-  rating: number; // 1-10
+  rating: number;
 }
 
 export interface AIResponse {
@@ -37,4 +37,4 @@ export interface AIResponse {
   foodAnalysis?: FoodAnalysis;
 }
 
-export type Tab = 'dashboard' | 'logs' | 'coach' | 'history';
+export type Tab = 'dashboard' | 'logs' | 'coach';

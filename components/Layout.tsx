@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Tab } from '../types';
+import Logo from './Logo';
 
 interface LayoutProps {
   activeTab: Tab;
@@ -12,9 +13,9 @@ const Layout: React.FC<LayoutProps> = ({ activeTab, setActiveTab, children }) =>
   return (
     <div className="flex flex-col min-h-screen max-w-md mx-auto bg-white shadow-xl">
       {/* Header */}
-      <header className="bg-emerald-600 text-white p-6 rounded-b-3xl shadow-lg sticky top-0 z-10">
-        <h1 className="text-2xl font-bold tracking-tight">Health Companion</h1>
-        <p className="text-emerald-100 text-sm mt-1">Your supportive health companion</p>
+      <header className="bg-white p-6 rounded-b-3xl shadow-sm border-b border-gray-50 sticky top-0 z-10 flex flex-col gap-1">
+        <Logo size={40} textColor="text-[#1D89CE]" />
+        <p className="text-gray-400 text-[10px] uppercase font-bold tracking-widest ml-14">Personal Health Companion</p>
       </header>
 
       {/* Main Content */}
@@ -50,10 +51,10 @@ const Layout: React.FC<LayoutProps> = ({ activeTab, setActiveTab, children }) =>
 const NavButton: React.FC<{ active: boolean; onClick: () => void; icon: React.ReactNode; label: string }> = ({ active, onClick, icon, label }) => (
   <button 
     onClick={onClick}
-    className={`flex flex-col items-center transition-colors duration-200 ${active ? 'text-emerald-600' : 'text-gray-400'}`}
+    className={`flex flex-col items-center transition-all duration-200 ${active ? 'text-[#1D89CE] scale-110' : 'text-gray-400'}`}
   >
     {icon}
-    <span className="text-xs mt-1 font-medium">{label}</span>
+    <span className="text-[10px] mt-1 font-bold uppercase tracking-wider">{label}</span>
   </button>
 );
 
